@@ -1,0 +1,209 @@
+/*======================================
+ Default Values
+Fonts: Reef
+Colors:
+1. Black Pearl: #1e272e;
+2. Chrome Yellow: #ffa801;
+3. Grey: #777;
+======================================*/
+
+/*======================================
+        Basic settings
+======================================*/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Reef';
+    src:url(../fonts/Reef.otf);
+}
+body{
+    font-family: 'Reef', sans-serif;
+    color:#1e272e;
+    text-rendering: optimizeLegibility;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration:none;
+}
+/*======================================
+        Header
+======================================*/
+
+header{
+    width: 100%;
+    background-color: #1e272e;
+    color:white;
+    box-shadow: 0px 4px 8px #777;
+}
+.heading-div{
+    display: flex;
+    max-width: 1400px;
+    margin:0 auto;
+    justify-content: space-between;
+    align-content: center;
+    padding:20px;
+}
+.heading-div h1{
+    color:#ffa801;
+    font-size:30px;
+    letter-spacing: 1px;
+}
+.nav-menu a{
+   color:white;
+   padding: 5px 30px;
+   font-size: 15px;
+   transition: color .2s ease-in-out;
+}
+/*Zašto ne radi ovo za nth child i unordered listu?*/
+.nav-menu a:nth-child(1) {
+
+    border-right: 1px solid #ffa801 ;
+}
+.nav-menu a:hover{
+    color: #ffa801;
+}
+
+/*======================================
+        Header image
+======================================*/
+.header-image{
+    max-width: 1400px;
+    margin:30px auto;
+}
+.header-image img{
+    width: 100%;
+}
+/*======================================
+        Artist text
+======================================*/
+
+.artists-text{
+    display:flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: space-between;
+    border-bottom: 2px solid #777;
+    padding-bottom: 10px;
+}
+.artist{
+    margin-right: 20px;
+}
+.artist:last-child{
+    margin: 0;
+}
+.artist-name{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.shape{
+    width:16px;
+    height:32px;
+    position: relative;
+    background-color:#ffa801 ;
+    margin-right: 30px;
+}
+.shape:before {
+    content: "";
+    position: absolute;
+    right: -16px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 16px solid #ffa801;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent; 
+}
+.artist-name h3{
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.artist .a{
+    color:#ffa801;
+
+}   
+/* a{
+    color:#ffa801;
+} */
+.artist p{
+    margin-bottom: 5px;
+}
+.artist a:hover{
+color:#1e272e;
+}
+/*======================================
+        Artist work
+======================================*/
+.artist-work{
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: right;
+    margin-bottom: 50px;
+    margin-top:10px;
+}
+.work-pictures{
+    display: flex;
+    justify-content: space-between;
+}
+.work-pictures img{
+    filter:grayscale(100%);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    border:4px solid transparent;
+}
+.work-pictures img:hover{
+    filter:grayscale(0);
+    border:4px solid #ffa801;
+    transform: scale(1.1);
+}
+.artist-work a{
+    font-size: 22px;
+    color: #ffa801;
+    transition: color .3s ease;
+}
+.artist-work a:hover{
+    color:#1e272e;
+}
+
+/*======================================
+        Footer
+======================================*/
+footer{
+    background-color: #1e272e;
+    color:white;
+}
+footer div{
+    max-width: 1400;
+    margin: 0 auto;
+}
+footer div p{
+    padding:20px;
+    font-size: 18px;
+}
+/*======================================
+        Back to top
+======================================*/
+.top{
+    position: fixed;
+    right:3%;
+    bottom:9%;
+    display: block;
+    background-color: #ffa801;
+    color: white;
+    padding:20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 1px #777;
+    transition: all .2s linear;
+}
+.top:hover{
+    background-color: #1e272e;
+    border-radius: 50%;
+}
