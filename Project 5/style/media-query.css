@@ -1,0 +1,68 @@
+@media all and (max-width:1420px){
+    .container{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+@media all and (max-width:991px){
+/*everything looks fine with this width */
+}
+@media all and (max-width:768px){
+    .heading-div{
+        flex-direction: column;
+    }
+    .nav-menu{
+        margin-bottom: 30px;
+    }
+    .nav-menu a{
+        font-size: 18px;
+        padding:5px;
+        margin:0 10px;
+    }
+    .about-me-gallery{
+        flex-direction: column;
+    }
+    .images {
+        width: auto;
+        margin-bottom: 50px;
+    }
+    .gallery{
+        flex-direction: column;
+  
+    }
+    .gallery img{
+        width: 100%;
+        margin:auto;
+        margin-bottom: 20px;
+    }
+    .story img{
+        width: 100%;
+        margin:auto;
+    }
+    form input, textarea{
+        width: 95%;
+    }
+}
+/*Phones*/
+@media all and (max-width:480px){
+    
+}
+@media all and (max-width:320px){
+    .nav-menu{
+        display: flex;
+        width: 100vh;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top:-120px;
+    }
+    .nav-menu a{
+        font-size:24px;
+        margin:20px;
+    }
+    .hamburger-menu{
+        display: inline;
+    }
+}
+
